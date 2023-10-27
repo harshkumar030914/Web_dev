@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navigation from "../../../Component/Navigation";
 const Header = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const nextSlide = () => {
@@ -19,16 +20,7 @@ const Header = ({ images }) => {
             style={{ height: "500px", width: "100%" }}
             src={images[currentSlide]}
           />
-          <div
-            style={{
-              height: "70px",
-              width: "100%",
-              backgroundColor: "rgba(0, 0, 0, 0.2)",
-              position: "absolute",
-              left: 0,
-              top: 0,
-            }}
-          ></div>
+
           <div
             className="text-box"
             style={{
@@ -74,6 +66,7 @@ const Header = ({ images }) => {
           </div>
         </div>
       </div>
+
     </>
   );
 };
@@ -132,6 +125,8 @@ const styles = `
 
 .dot.active {
   background-color: #fff;
+  width: 12px;
+  height: 12px;
 }
 
 @media (max-width: 768px) {
