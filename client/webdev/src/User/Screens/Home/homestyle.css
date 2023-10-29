@@ -38,7 +38,11 @@
   .dot.active {
     background-color: #333;
   }
-  
+  .container-img {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
   /* Add media queries for responsiveness */
   @media (max-width: 768px) {
     .slider-container {

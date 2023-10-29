@@ -73,6 +73,12 @@ const MainSection = () => {
           <Card image={"./Blog_2.png"} />
           <Card image={"./Blog_3.png"} />
           <Card image={"./Blog_4.png"} />
+          <Card image={"./Blog_5.png"} />
+          <Card image={"./Blog_6.png"} />
+          <Card image={"./Blog_7.png"} />
+          <Card image={"./Blog_8.png"} />
+          <Card image={"./Blog_3.png"} />
+          <Card image={"./Blog_4.png"} />
         </div>
       </div>
     </>
