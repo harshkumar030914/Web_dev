@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./component/Header";
 import Navigation from "../../Component/Navigation";
+import MainSection from "./component/MainSection";
 const Home = () => {
   const data = [
     "/slider_1.png",
@@ -12,6 +13,7 @@ const Home = () => {
     <>
       <Header images={data} />
       <Navigation />
+      <MainSection />
     </>
   );
 };

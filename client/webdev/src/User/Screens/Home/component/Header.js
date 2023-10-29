@@ -20,17 +20,10 @@ const Header = ({ images }) => {
             style={{ height: "500px", width: "100%" }}
             src={images[currentSlide]}
           />
-
-          <div
-            className="text-box"
-            style={{
-              height: "500px",
-              marginTop: "10%",
-            }}
-          >
+          <div className="text-box">
             <h1
               style={{
-                fontSize: "36px",
+                fontSize: "38px",
                 color: "rgba(255, 255, 255, 1)",
                 fontFamily: "Lora",
                 textAlign: "left",
@@ -40,20 +33,40 @@ const Header = ({ images }) => {
             >
               {"Richird Norton photorealistic rendering as real photos"}
             </h1>
-            <p
+            <div
               style={{
-                fontSize: "18px",
-                color: "rgba(255, 255, 255, 1)",
-                fontFamily: "Lora",
-                textAlign: "left",
-                paddingLeft: "4px",
-                paddingRight: "4px",
+                display: "flex",
+                // justifyContent: "center",
+                // alignItems: "center",
               }}
             >
-              {
-                "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data"
-              }
-            </p>
+              {/* <p
+                style={{
+                  fontSize: "12px",
+                  color: "rgba(255, 255, 255, 1)",
+                  fontFamily: "Lora",
+                  textAlign: "left",
+                  paddingRight: "4px",
+                  paddingTop: "8px",
+                }}
+              >
+                {"08.08.2021"}
+              </p> */}
+              <p
+                style={{
+                  fontSize: "16px",
+                  color: "rgba(255, 255, 255, 1)",
+                  fontFamily: "Lora",
+                  textAlign: "left",
+                  paddingLeft: "4px",
+                  paddingRight: "4px",
+                }}
+              >
+                {
+                  "Progressively incentivize cooperative systems through technically sound functionalities. The credibly productivate seamless data"
+                }
+              </p>
+            </div>
             <div className="paging-dots">
               {images.map((_, index) => (
                 <span
@@ -66,7 +79,6 @@ const Header = ({ images }) => {
           </div>
         </div>
       </div>
-
     </>
   );
 };
@@ -100,6 +112,7 @@ const styles = `
   color: white;
   padding: 20px;
   height:500px;
+  margin-top:10%;
 }
 
 .text-content {
@@ -134,10 +147,12 @@ const styles = `
     max-width: 100%;
   }
   .text-box{
-    width:80%;
+    width:90%;
+  }
+  .text-box {
+    margin-top:20%;
   }
 }
-
 @media (max-width: 480px) {
   .slider-container {
     max-width: 100%;
@@ -147,6 +162,9 @@ const styles = `
   }
   .paging-dots {
     display: none;
+  }
+  .text-box {
+    margin-top:20%;
   }
 }
 `;

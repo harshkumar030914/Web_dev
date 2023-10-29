@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.cards {
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}

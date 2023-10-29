@@ -49,6 +49,7 @@ const Navigation = () => {
                 color: "white",
                 fontFamily: "Lora",
               }}
+              className="m-5"
             >
               {"LOGO"}
             </p>
@@ -72,6 +73,7 @@ const Navigation = () => {
                     fontFamily: "Lora",
                     cursor: "pointer",
                   }}
+                  className="m-5"
                 >
                   {"Home"}
                 </p>
@@ -92,6 +94,7 @@ const Navigation = () => {
                     fontFamily: "Lora",
                     cursor: "pointer",
                   }}
+                  className="m-5"
                 >
                   {"About"}
                 </p>
@@ -112,6 +115,7 @@ const Navigation = () => {
                     fontFamily: "Lora",
                     cursor: "pointer",
                   }}
+                  className="m-5"
                 >
                   {"Articles"}
                 </p>
@@ -132,6 +136,7 @@ const Navigation = () => {
                     fontFamily: "Lora",
                     cursor: "pointer",
                   }}
+                  className="m-5"
                 >
                   {"Blogs"}
                 </p>
@@ -151,7 +156,7 @@ const Navigation = () => {
               }}
             >
               <i
-                class="fa fa-bars"
+                className="fa fa-bars"
                 style={{ fontSize: "25px", color: "#fff " }}
               ></i>
             </span>
@@ -170,7 +175,7 @@ const Navigation = () => {
             backgroundColor: "#111",
           }}
         >
-          <div style={{marginTop:"40px"}}>
+          <div style={{ marginTop: "40px" }}>
             <a style={styles.text} href="#">
               About
             </a>
